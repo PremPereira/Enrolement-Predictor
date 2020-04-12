@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	html,body { 
+        background-color: LightSlateGrey;
+        text-align: center;
+        }
+    div {
+        background-color: aliceblue;
+        border-radius: 25px;
+        width: 50%;
+        padding : 50px;
+        margin: auto;
+        font-family:'Times New Roman', serif;
+        font-size: 20px;
+    }
+    h1 {
+        margin-bottom : 20px;
+        font-family:'BT Charter', sans-serif;
+        font-size: 50px;
+    }
+	</style>
+	<h1>
+		Enrollment prediction
+	</h1>
+</head>
+<body>
+	<div>
+	<p><h2>Enter your college details</h2></p>
+	<form action="\result" method="POST">
+		Cutoff rank:
+		<input type="text" name="cutoff">
+		<br>
+		<br>
+		College rank:
+		<select  name = "college rank" class="form-control" style="width : 18%;margin :auto;">
+            <option value = 0 >High</option>
+            <option value = 1 >Medium</option>
+            <option value = 2 >Low</option>
+        </select>
+        <br>
+		<br>
+		Lab facilties:
+		<input type="radio" name="lab" value=1 checked>Yes
+        <input type="radio" name="lab" value=0 >No
+        <br>
+		<br>
+		Hostel facilities:
+		<input type="radio" name="hostel" value=1 checked>Yes
+        <input type="radio" name="hostel" value=0 >No
+        <br>
+		<br>
+		Sports:
+		<input type="radio" name="sports" value=1 checked>Yes
+        <input type="radio" name="sports" value=0 >No
+        <br>
+		<br>
+		Transport:
+		<input type="radio" name="transport" value=1 checked>Yes
+        <input type="radio" name="transport" value=0 >No
+        <br>
+		<br>
+		Extra coaching classes:
+		<input type="radio" name="coaching" value=1 checked>Yes
+        <input type="radio" name="coaching" value=0 >No
+        <br>
+		<br>
+		Placement training:
+		<input type="radio" name="placement" value=1 checked>Yes
+        <input type="radio" name="placement" value=0 >No
+        <br>
+		<br>
+		Fee concesion:
+		<input type="radio" name="fee" value=1 checked>Yes
+        <input type="radio" name="fee" value=0 >No
+        <br>
+		<br>
+		Board:
+		<input type="radio" name="board" value=1 checked="">VTU
+        <input type="radio" name="board" value=0 checked>Autonomous
+        <br>
+		<br>
+		College location:
+		<input type="radio" name="loc" value=1 checked>City
+        <input type="radio" name="loc" value=0 checked>Outskirts
+        <br>
+		<br>
+		Feedback:
+		<input type="radio" name="feedback" value=1 >1
+        <input type="radio" name="feedback" value=2 >2
+        <input type="radio" name="feedback" value=3 checked>3
+        <br>
+		<br>
+        Departments available:
+        <input type="text" name="dept">
+        <br>
+		<br>
+        Previous placement %:
+        <input type="text" name="prev">
+        <br>
+		<br>
+        Intake:
+        <input type="text" name="intake">
+        <br>
+		<br>
+		<input type="submit" value="GET RESULTS !!">
+	</form>
+	</div>
+
+</body>
+</html>
